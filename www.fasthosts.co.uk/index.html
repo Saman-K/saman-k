@@ -1,0 +1,85 @@
+<html>
+<link href="Style.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<link rel="shortcut icon" href="https://www.fasthosts.co.uk/favicon.ico" type="image/vnd.microsoft.icon">
+<title> fasthosts/Home </title>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+  
+$(document).ready(function(){
+    $("#pswr").hide();
+	$("#pswrl").hide();
+    $("#signin").click(function(){
+		$("#pswr").hide();
+		$("#pswrl").hide();
+        var x = document.getElementById("pswr").required=false;
+    });
+    $("#signup").click(function(){
+		$("#pswr").show();
+		$("#pswrl").show();
+		var x = document.getElementById("pswr").required=true;
+    });
+});
+</script>
+
+</head>
+
+<body bgcolor="#3399ff">
+
+<div class="logo" style="margin: 5px 25% 5px 25%;">
+    <img src="http://mediaserver.dwpub.com/newsroom-logo/tb_lrg/36643/Fasthosts_logo_newbrand_203a8f_n.png"/>
+</div>
+
+<center>
+
+<ul style= "width: 50% ">
+    <li><a class="active" href="home.html">Home</a></li>
+    <li><a href="tlds.html">TLDs</a></li>
+    <li><a href="contectus.html">Contect us</a>
+    <li class="dropdown" style="float:right">
+        <a class="active" href="signin.html" class="dropbtn">Sign In </a>
+        <div class="dropdown-content" style="right:25%;">
+            <a href="#">
+                <div id="id01" class="modal" style= "width: 500px;">
+                    <form action="action_page.php">
+                        <div class="container">
+                          	<label><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+                            <label><b>Password</b></label>
+                         	<input type="password" placeholder="Enter Password" id="psw" required>
+        
+                            <label id="pswrl" ><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" id="pswr" >
+        
+                            <button type="submit" id="signin">Sign In </button>
+                            <button  id="signup" onClick="myFunction()">Sign Up</button>
+                            <input type="checkbox" checked="checked"> Remember me
+                        </div>
+                    </form>
+                </div>
+            </a>
+    </div>
+    </li>
+</ul>
+
+    
+<div>
+    <div class="box">
+    <div style="margin: 5px 27% 0 25%"><img src="globe-gif-3.gif" style="float:right" height="350">
+        <p1 style="margin: 50px 50px 0 50px;"> Next generation Cloud Servers </p1>
+        <p1> </p1>
+        <div class="redbox">£19.99</div>
+    </div>
+    </div>
+</div>
+
+<div class="main-page">
+    
+</div>
+</center>
+
+</body>
+
+</html>
