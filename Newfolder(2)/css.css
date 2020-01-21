@@ -10,3 +10,32 @@
     margin-left: auto;
     margin-right: auto;
 }
+#nav1 {
+    display: flex;
+    align-items: end;
+
+  }
+  #header {
+    background-color: #0f0f0f;
+    font-weight: 400;
+    border-bottom: 1px solid #fafafa;
+    width: 100%;
+    position: fixed;
+
+  }
+#header img {
+    width: 2%;
+}
+.ul > li {
+    list-style: none;
+ padding-bottom: 10px;
+ padding-right: 50px;
+ display: flex;
+ flex-direction: column;
+ font-size: large;
+}
+@media (max-width: 630px) {
+    #header img{
+        width: 10%;
+    }
+}
