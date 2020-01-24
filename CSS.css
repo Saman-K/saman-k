@@ -3,15 +3,30 @@
     
 }
 
-.body {
-    background-color: #eeeeee;
-    width: 60%;
-    height: 90%;
+body {
+    display: grid;
+    background-color: #e4e4e4;
+    width: 100%;
+    height: 100%;
     margin: auto;
 }
 
-.logo {
+div {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+a {
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+img {
     width: 20%;
     height: auto;
-    
+    align-self: center;
+    justify-self: center;
 }
